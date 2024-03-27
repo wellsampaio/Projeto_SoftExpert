@@ -1,0 +1,22 @@
+{
+    "name": "wellsampaio/projeto_softexpert",
+    "authors": [
+        {
+            "name": "Wellington Sampaio",
+            "email": "wellington.victalino@gmail.com"
+        }
+    ],
+    "require": {
+    	"phpmailer/phpmailer":"5.2.22",
+    	"slim/slim":"3.12.4",
+    	"rain/raintpl":"3.0.0",
+	"guzzlehttp/guzzle":"*",
+        "nesbot/carbon": "^2.69",
+        "slim/twig-view": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "classes\\src"
+        }
+    }
+}

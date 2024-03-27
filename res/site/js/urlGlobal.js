@@ -1,0 +1,1 @@
+const urlGlobal = 'http://www.softexpert.com.br';
