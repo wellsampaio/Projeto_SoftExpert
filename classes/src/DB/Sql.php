@@ -4,7 +4,7 @@ namespace Classes\DB;
 
 class Sql {
 
-	const HOSTNAME = "localhost";
+	const HOSTNAME = "172.30.0.3";
 	const PORT = "5432";
 	const USERNAME = "postgres";
 	const PASSWORD = "P@ssw0rd";

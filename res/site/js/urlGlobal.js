@@ -1,1 +1,1 @@
-const urlGlobal = 'http://www.softexpert.com.br';
+const urlGlobal = 'http://localhost:8000';

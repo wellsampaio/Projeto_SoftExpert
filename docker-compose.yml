@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: sistema_mercado_softexpert
+    restart: always
+    ports:
+      - '8000:80'
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - minha_rede
+
+  db:
+    image: postgres
+    container_name: banco_de_dados
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: P@ssw0rd
+      POSTGRES_DB: soft_expert
+    ports:
+      - "5434:5432"
+    volumes:
+      - ./banco_dados.sql:/docker-entrypoint-initdb.d/banco_dados.sql
+    networks:
+      - minha_rede
+
+networks:
+  minha_rede:
